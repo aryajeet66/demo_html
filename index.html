@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+
+    <div class="flex-box">
+        <div class="left">
+            <div class="big-img">
+                <img src="./img/Shoe-1.png">
+            </div>
+            <div class="images">
+                <div class="small-img">
+                    <img src="./img/Shoe-1.png" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="./img/Shoe-2.png" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="./img/Shoe-3.png" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="./img/Shoe-4.png" onclick="showImg(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            
+            <div class="pname">Shoes for Men</div>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$40</div>
+            <div class="size">
+                <p>Size :</p>
+                <div class="psize active">US-8</div>
+                <div class="psize">US-9</div>
+                <div class="psize">US-10</div>
+                <div class="psize">US-11</div>
+            </div>
+            <div class="quantity">
+                <p>Quantity :</p>
+                <input type="number" min="1" max="5" value="1">
+            </div>
+            <div class="btn-box">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let bigImg = document.querySelector('.big-img img');
+        function showImg(pic){
+            bigImg.src = pic;
+        }
+    </script>
+</body>
+</html>
